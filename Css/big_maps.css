@@ -1,0 +1,180 @@
+/*
+ * common style
+ */
+*{ margin: 0; padding: 0}
+html,body{ height: 100%;width: 100%;overflow: hidden; }
+body{ margin: 0;height: 100%;width: 100%; }
+.btn{ cursor: pointer;text-align: center; }
+.usable-btn{ background-color: #461379;color: #ffffff; cursor :pointer; }
+.being-submit-btn{ background-color: #7c5f99;color: #ffffff; cursor :wait; }
+.being-submit-btn:hover{ background-color: #7c5f99;color: #ffffff; cursor :wait; }
+.disabled-btn{ background-color: #CECECE; color: #ffffff; cursor: no-drop;}
+.disabled-btn:hover{ background-color: #CECECE; color: #ffffff; cursor: no-drop;}
+.editor-wrapper{width: 100%; height:100%; position: relative;}
+#mapTitle{ width:100%;height:100px;position: absolute;top:20px;text-align: center; z-index: 9; cursor: pointer;}
+#mapTitle .map-title-body{ width:100%;height:100%;}
+#mapTitle .map-title-body div{color:#ffffff;font-size: 16px;font-weight: 900;padding:8px 0px;}
+#container{ width: 100%;height:100%; cursor: pointer;background: rgba(64, 74, 89, 1);text-align: center; }
+#container *{ cursor: pointer; }
+#container label{ color: #FFFFFF;position: relative;top:35%; }
+#initProvince{ display: none; }
+ul li{ list-style: none;}
+a{ color:#030c11; text-decoration: none;}
+.editor-tool-aside{ position: absolute; right: 15px; top: 3px; z-index: 77777; width: 30px; height: 30px;cursor: pointer;}
+.tool-item1{  background: url("../images/icon-full.png") no-repeat;}
+.tool-item2{  background: url("../images/icon-full2.png") no-repeat; display: none;  }
+#close{ position: absolute; top:5px; right: -22px }
+#arrowLeft{ position: absolute; bottom:140px; right: 0px; display: none; }
+#hintProvince{
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    display: none;
+    padding: 6px 8px 5px;
+    font-size:15px;
+    width:30px;
+    height:18px;
+    line-height:18px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    color:#FFFFFF;
+}
+.check_more a{display: inline-block;  text-align: center;  line-height: 30px;  width: 100%;  color: #3B8BBA;  color:#010508; }
+.check_more a:hover{ text-decoration: underline;}
+
+.commonBox{
+    padding: 1%;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: absolute;
+}
+.firstBox{  left: 10px; top:10px; border-bottom-right-radius: 30px;}
+.secondBox{ right: 10px; top:10px; border-bottom-left-radius: 30px;}
+.thirdBox{  bottom: 10px; left: 10px; border-top-right-radius: 30px;}
+.fourthBox{ bottom: 10px; right: 10px; border-top-left-radius: 30px;}
+.centerBox{  width:407px;  height:214px;  background: url("../images/centerBox_bg.png") no-repeat ;  text-align: center;  position: absolute;  top:2%;  left: 35%;  }
+.centerBox span{  color: #fff;   letter-spacing: 2px;  font-size: 20px;  }
+
+.scroll{ height: 50px; border: 1px solid red;  padding-top: 16%;}
+#box_con{padding: 0 10%; border: 1px solid red; }
+#box_con li p{ float: left;  }
+#box_con li p:nth-of-type(1){width: 33%; color: #fff;  padding-top: 20%;}
+#box_con li p:nth-of-type(2){width: 33%; color: #b52033;   padding-top: 20%;}
+#box_con li p:nth-of-type(3){width: 34%; color: #09fcfe;  padding-top: 16%;}
+
+.thirdBox p{ line-height: 35px; font-size: 14px; color: #fff;}
+.thirdBox p:nth-of-type(1){ color:orange; }
+.thirdBox p span{ width: 90px; display: inline-block;}
+
+.rLeft1,.rRight1,.rLeft2,.rRight2,.rLeft3,.rRight3,.rLeft4,.rRight4{
+    position: absolute;
+    z-index: 777;
+    display: none;
+    cursor: pointer;
+}
+.rLeft1{  left:400px ;top:115px;}
+.rRight1{  left: 0px; top:115px;}
+
+.rLeft2{  right: 400px; top:115px; }
+.rRight2{  right: 0px; top:115px;}
+
+.rLeft3{  left: 400px; bottom:115px; }
+.rRight3{  left: 0px; bottom:115px; }
+
+.rLeft4{  right: 400px; bottom: 60px;}
+.rRight4{  right: 0px; bottom:115px;}
+
+
+.pillars{ float: left; width: 280px; height: 276px;}
+.pieChart{ float: right; width: 120px; height: 276px;}
+
+#thirdBoxLeft{ float: left; width: 300px; height: 276px;}
+#thirdBoxRight{ float: left; width: 100px; height: 276px;}
+
+#firstBox,#secondBox,#thirdBox{color:#fff; width: 400px; height: 276px;}
+#secondBox{ height: 300px; }
+#secondBoxLeft{ height: 300px; width: 50%; float: left;}
+#secondBoxRight{ height: 300px; width: 50%; float: right;}
+#fourthBox{ padding-bottom: 10px;}
+
+.centerFour{ padding: 1%;  width: 382px; color: #fff;  text-align: center;max-height: 206px; }
+.waringShow{  background: url("../images/bg_top.png") no-repeat; height: 37px; font-family: '黑体'; font-weight: bold; font-size: 14px;}
+.waringT{font-size: 12px; padding:  0 2% ; height: 30px;font-family: '黑体';}
+.waringT li{ float: left; width: 25%;  overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.centerFour a{ color: #fff;}
+.waringCenter{ background: url("../images/bg_center.png") repeat-y; padding: 2%; max-height: 146px;}
+.waringC li{ line-height: 23px;}
+.unit-name{ color: orange;}
+.bjz{ color: #08fafd;}
+h1.hint-h1{  width: 100%;padding: 42% 0% 0% 18%;text-align: center;color:#ffffff;font-size:18px;}
+.list_lh{ overflow:hidden; font-size: 12px;max-height: 120px;}
+.list_lh ul a{ cursor: default; }
+.list_lh li{ height:24px; line-height:24px;}
+.list_lh li p{  float:left; width: 21%; margin: 0 2%;overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.waringbottom{ background: url("../images/bg_bottom.png") no-repeat; height: 3px;}
+
+/* 定义keyframe动画，命名为blink */
+@keyframes blink { 0%{ opacity: 1; }50%{ opacity: 1; }50.01% { opacity: 0; }100% { opacity: 0; }}
+/* 添加兼容性前缀 */
+@-webkit-keyframes blink {0%{ opacity: 1; }50%{ opacity: 1; }50.01% { opacity: 0; }100% { opacity: 0; }}
+@-moz-keyframes blink { 0%{ opacity: 1; }50%{ opacity: 1; }50.01% { opacity: 0; }100% { opacity: 0; }}
+@-ms-keyframes blink {0%{ opacity: 1; }50%{ opacity: 1; }50.01% { opacity: 0; }100% { opacity: 0; }}
+@-o-keyframes blink { 0%{ opacity: 1; }50%{ opacity: 1; }50.01% { opacity: 0; }100% { opacity: 0; }}
+
+.amplification{
+    animation: blink 1.5s linear infinite;
+    /* 其它浏览器兼容性前缀 */
+    -webkit-animation: blink 1.5s linear infinite;
+    -moz-animation: blink 1.5s linear infinite;
+    -ms-animation: blink 1.5s linear infinite;
+    -o-animation: blink 1.5s linear infinite;
+    color: #fff;
+}
+
+#totalUnit{padding:10px; background: #7c5f99; border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #fff; font-size: 14px; color:#fff; position: absolute;  top:55px; right: 80px; z-index: 777; text-align: center; font-family: '黑体'; font-weight: normal;}
+#firstMonth{padding: 5px;  border-radius: 3px; -webkit-border-radius: 3px;  font-size: 14px; color:#fff; letter-spacing: 1px;   position: absolute; top:50px; left: 135px; z-index: 777; text-align: center;  cursor: pointer;  }
+
+.threeButton{ width:300px;  height: 50px; position: absolute; z-index: 7;
+    bottom:6px; left: 50%;}
+input[type="button"]{
+    cursor: pointer;
+}
+.threeButton input,.threeButton button{ display: inline-block; padding: 5px 8px; border: 0; outline: none; border-radius: 3px; -webkit-border-radius: 3px; color: #fff;}
+.threeButton button{ background: #2a4469; cursor: pointer;}
+
+.threeCicle{ position: absolute; bottom: 5px; left:300px; width: 100px; height: 300px; z-index: 77;  text-align: center;}
+.threeCicle p{ color: #fff; font-family: '黑体'; padding-bottom: 10px; font-size: 14px;line-height: 60px; font-weight: bold;}
+.circle{ margin: 5px 0;}
+
+.disNone,.hide{ display: none;}
+.disBlock{ display: block;}
+
+.loading{
+    cursor: wait;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

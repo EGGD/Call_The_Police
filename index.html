@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://app.diandingding.com/manage/big_maps -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <title>地图 </title>
+    <link href="./Css/big_maps.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<div id="mapTitle">
+    <div class="map-title-body">
+        <!--<div class="self-unit-name">金帝集团有限公司</div>-->
+        <div class="self-map-title">安全大数据中心</div>
+    </div>
+</div>
+<div class="editor-wrapper">
+    <!--刷新地图-->
+    <div class="threeButton">
+        <!--  <input class="openBtn being-submit-btn" value="正在监控" type="button" id="openBtn">
+          <input class="closeBtn usable-btn" value="关闭监控" type="button" id="closeBtn">-->
+        <!--<input class="usable-btn" value="首页" type="button" id="backIndex">-->
+        <span class="append"></span>
+    </div>
+
+    <div class="threeCicle">
+        <p style="display: none;">设备在线率</p>
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+    </div>
+    <div id="totalUnit" style="display: block;">接入单位:1&nbsp;接入设备:2</div>
+    <div id="firstMonth" style="left: 125px;">报警数据</div>
+    <div class="rRight1" style="display: none;"><img src="./images/rRight.png"></div>
+    <div class="rRight2" style="display: none;"><img src="./images/rLeft.png"></div>
+    <div class="rRight3"><img src="./images/rRight.png"></div>
+    <div class="rRight4"><img src="./images/rLeft.png"></div>
+
+    <div id="container"
+         style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: rgb(64, 74, 89);"
+         ">
+        <div style="position: relative; overflow: hidden; width: 1552px; height: 1192px; cursor: default;">
+
+        </div>
+        <div></div>
+    </div>
+
+    <div class="editor-tool-aside tool-item1 icon-full onFullScreen" id="btnFull"></div>
+    <div class="editor-tool-aside tool-item2 icon-full onFullScreen" id="btnFull2"></div>
+    <div id="arrowLeft"><img src="./images/arrowLeft.png"></div>
+
+    <div class="commonBox firstBox" id="firstBox" style="height: 276px; left: 10px;">
+        <div class="rLeft1" style="display: none;"><img src="./images/rLeft.png"></div>
+        <div class="pillars" id="pillars"
+             style="height: 276px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"
+             ">
+            <div style="position: relative; overflow: hidden; width: 280px; height: 276px;">
+
+            </div>
+            <div></div>
+        </div>
+        <div class="pieChart" id="pieChart"
+             style="height: 276px; -webkit-tap-highlight-color: transparent; user-select: none; background: transparent;"
+             ">
+            <div style="position: relative; overflow: hidden; width: 120px; height: 276px;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="commonBox secondBox" style="display: block;">
+        <div class="rLeft2" style="display: none;"><img src="./images/rRight.png"></div>
+        <div id="secondBox">
+            <div id="secondBoxLeft"
+                 style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"
+                 ">
+                <div style="position: relative; overflow: hidden; width: 200px; height: 300px;">
+
+                </div>
+                <div></div>
+            </div>
+            <div id="secondBoxRight"
+                 style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"
+                 ">
+                <div style="position: relative; overflow: hidden; width: 200px; height: 300px;">
+
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="commonBox thirdBox" id="thirdBox" style="height: 276px;">
+        <div id="thirdBoxLeft" class="thirdBoxLeft"
+             style="height: 276px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;"
+             ">
+            <div style="position: relative; overflow: hidden; width: 300px; height: 276px; cursor: default;">
+
+            </div>
+            <div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgba(50, 50, 50, 0.701961); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; font-family: 宋体; line-height: 18px; padding: 5px; left: 132.484px; top: 111.75px; height: 276px;">
+                灭弧<br><span
+                    style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#2d5c86"></span>在线设备
+                : 1<br><span
+                    style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#2a67c0"></span>离线设备
+                : 0
+            </div>
+        </div>
+        <div id="thirdBoxRight" style="height: 276px;"></div>
+        <div class="rLeft3" style="display: none;"><img src="./images/rLeft.png"></div>
+    </div>
+    <div class="commonBox fourthBox" id="fourthBox">
+        <div class="rLeft4" style="display: none;">
+            <img src="./images/rRight.png">
+        </div>
+        <div class="centerFour">
+            <p class="waringShow">单位设备报警(0条)</p>
+            <div class="waringCenter">
+                <ul class="waringT">
+                    <li>单位名称</li>
+                    <li>设备名称</li>
+                    <li>报警类型</li>
+                    <li>序列号</li>
+                </ul>
+                <div style="clear: both"></div>
+                <div class="list_lh" id="scrollData" style="height: 0px;">
+                    <ul class="monitoring" id="monitoring_self"></ul>
+
+                    <ul class="monitoring" id="monitoring_self"></ul>
+                </div>
+                <div class="waringbottom"></div>
+            </div>
+        </div>
+    </div>
+    <div id="inJs"></div>
+</div>
+<span id="hintProvince" style="left: 1002px; top: 266px; width: 48px; display: none; bottom: 0px; right: 0px;"></span>
+<input type="hidden" id="init_province" value="浙江">
+<input type="hidden" id="init_city" value="温州市">
+<input type="hidden" id="special" value="False">
+<input type="hidden" id="level" value="city">
+<input type="hidden" id="user_admin" value="1">
+<script src="./Js/jquery.min.js"></script>
+<script src="./Js/echarts.min.js"></script>
+<script src="./Js/echarts-all-3.js"></script>
+<script src="./Js/Js_dzt.js"></script>
+
+</body>
+</html>
